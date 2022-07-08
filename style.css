@@ -6,6 +6,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.lang {
+    padding: 0.5% 1% 0.5%;
+    margin-left: 50%;
+}
+
 body {
     background-color: rgba(214, 219, 223, 0.96);
 }
@@ -33,7 +38,8 @@ body {
 }
 
 .left-section-contents {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
+    align-items: center;
 }
 
 .profile {
@@ -42,14 +48,16 @@ body {
 }
 
 .profile .profile-image {
-    width: 100%;
-    size: 35px;
+    width: 60%;
     border-radius: 50%;
+    align-content: center;
+    margin-left: 20%;
+    box-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 .name {
-    color: #D6DBDF;
-    font-size: 30px;
+    color: #ffffffff;
+    font-size: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
@@ -81,39 +89,13 @@ body {
     padding-top: 3rem;
 }
 
-.contact-info ul {
-    padding-top: 1.5rem;
-}
-
-.contact-info ul li,
-.references ul li {
+.contact-info {
     padding: .4rem 0;
-    display: flex;
-    align-items: center;
+    display: flow-root;
+    align-items: left;
     color: #ffffffff;
-    letter-spacing: 1px;
-    font-size: 18px;
-}
-
-.contact-info ul li i,
-.references ul li i {
-    padding-right: 1rem;
-    font-size: 18px;
-    color: #2E86C1;
-}
-
-.skills ul {
-    padding-top: 1.5rem;
-}
-
-.skills ul li p {
-    padding: .4rem 0;
-    color: #ffffffff;
-    font-size: 18px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 
 .referance-name {
@@ -149,26 +131,20 @@ body {
     position: relative;
 }
 
-.gap {
-    padding-bottom: 2rem;
-}
-
 .about-me {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     line-height: 2rem;
     color: rgba(0, 0, 0, 1);
+    padding-right: 2rem;
 }
 
 p.about-me-title {
     font-size: 24px;
+    font-weight: bold;
+    padding: 1rem 0rem;
+    text-transform: uppercase;
     color: rgba(179, 0, 0, 1)
-}
-
-p.experience {
-    font-size: 24px;
-    color: rgba(179, 0, 0, 1);
-    padding-top: 2rem;
 }
 
 p.education {
@@ -183,19 +159,37 @@ p.certificates {
     padding-top: 2rem;
 }
 
+p.experience-right-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1rem 0rem 2rem 2rem;
+    text-transform: uppercase;
+    color: rgba(179, 0, 0, 1)
+}
+
+p.education-right-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1rem 0rem 2rem 2rem;
+    text-transform: uppercase;
+    color: rgba(179, 0, 0, 1)
+}
+
 .experience-contents,
 .education-contents,
 .awards-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 2rem;
-    color: #F1F8FD;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: rgba(255, 0, 0, 1);
 }
 
 .exp-company-name,
 .education-school-name,
 .awards-company-name {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -207,6 +201,7 @@ p.certificates {
 .educationp-time-period,
 .awards-time-period {
     font-size: 18px;
+    padding-bottom: 2rem;
     letter-spacing: 1px;
     line-height: 2rem;
 }
