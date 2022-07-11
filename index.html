@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodrigo Garcia - Dev</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/37c68baede.js" crossorigin="anonymous"></script>
 </head>
 
 <header>
-    <button class="lang">English</button>
+    <button class="darkButton" id="darkBtn" onclick="DarkMode()">Modo escuro</button>
 </header>
 
 <body>
@@ -25,23 +27,37 @@
                 <div class="main-contact-info">
                     <p class="left-title">Contatos</p>
                     <ul class="contact-info">
-                        <li><i class="fa fa-phone"></i>(13) xxxx-xxxx</li>
-                        <li><i class="fa fa-envelope"></i>rodrigo.manoel@usp.br</li>
-                        <li><i class="fa fa-envelope"></i>rodrigogarciacapota@gmail.com</li>
-                        <li><i class="fa fa-github "></i>rodrigogarcia1986</li>
+                        <li><i class="fa-solid fa-square-phone"></i>(13) xxxx-xxxx</li>
+                        <li><i class="fa-solid fa-envelope"></i>rodrigo.manoel@usp.br</li>
+                        <li><i class="fa-solid fa-envelope"></i>rodrigogarciacapota@gmail.com</li>
+                        <li><i class="fa-solid fa-code-branch"></i>rodrigogarcia1986</li>
                     </ul>
                 </div>
                 <div class="skills">
-                    <p class="left-title">Habilidades</p>
+                    <p class="left-title">Hard skills</p>
                     <ul class="contact-info">
                         <li>Photoshop</li>
                         <li>InDesign</li>
                         <li>Word</li>
                         <li>Excel</li>
+                        <li> Kanban</li>
+                        <li> Trello | Asana | Monday | Click-Up</li>
                         <li>HTML | CSS</li>
                         <li> C# | JavaScript | Python</li>
                         <li>Unity</li>
                         <li>Git | GitHub</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <p class="left-title">Soft skills</p>
+                    <ul class="contact-info">
+                        <li>Comunicação</li>
+                        <li>Gestão de tempo</li>
+                        <li>Responsabilidade</li>
+                        <li>Flexibilidade</li>
+                        <li>Trabalho em equipe</li>
+                        <li> Gestão de equipe</li>
+                        <li>Tomada de decisão</li>
                     </ul>
                 </div>
             </section>
@@ -55,7 +71,7 @@
                 </div>
             </section>
             <section class="experience">
-                <p class="experience-right-title">Experiências</p>
+                <p class="experience-right-title">Experiências principais</p>
                 <div class="experience-contents">
                     <div class="exp-left">
                         <p class="exp-company-name">FMU</p>
@@ -124,11 +140,92 @@
                             <br> Licenciatura Plena em Português
                         </p>
                     </div>
-
-
                 </div>
-
-
+            </section>
+            <section class="certificates">
+                <p class="certificates-right-title">Cursos</p>
+                <div class="certificates-contents">
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Universidade de Colorado</p>
+                        <p class="education-time-period">2022</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">C# Programming for Unity Game Development</p>
+                        <p class="certificates-desc">
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/BUP5ZYN93B2R">Ver certificado </a>
+                        </p>
+                    </div>
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Universidade de Colorado</p>
+                        <p class="education-time-period">2022</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">Intermediate Object-Oriented Programming for Unity Games</p>
+                        <p class="certificates-desc">
+                            <a href="coursera.org/account/accomplishments/verify/WNGSKK892T3X">Ver certificado </a>
+                        </p>
+                    </div>
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Trybe</p>
+                        <p class="education-time-period">2022</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">Curso Introdutório de Javascript</p>
+                        <p class="certificates-desc">
+                            <a href="https://smartcerts.co/certificate/pydmnqzj">Ver certificado </a>
+                        </p>
+                    </div>
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Universidade de Colorado</p>
+                        <p class="education-time-period">2022</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">C# Class Development</p>
+                        <p class="certificates-desc">
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/6DQE2YRMAVVC">Ver certificado </a>
+                        </p>
+                    </div>
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Michigan State University</p>
+                        <p class="education-time-period">2022</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">Game Design and Development 1: 2D Shooter</p>
+                        <p class="certificates-desc">
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/ANA9ET5KRFQ4">Ver certificado </a>
+                        </p>
+                    </div>
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Universidade de Colorado</p>
+                        <p class="education-time-period">2022</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">More C# Programming and Unity</p>
+                        <p class="certificates-desc">
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/DMTSALPNK7C5">Ver certificado </a>
+                        </p>
+                    </div>
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Universidade de Colorado</p>
+                        <p class="education-time-period">2022</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">Introduction to C# Programming and Unity</p>
+                        <p class="certificates-desc">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/V7WHXB7PKA9P">Ver certificado </a>
+                        </p>
+                    </div>
+                    <div class="certificates-left">
+                        <p class="certificates-school-name">Domestika</p>
+                        <p class="education-time-period">2021</p>
+                    </div>
+                    <div class="certificates-right">
+                        <p class="certificates-name">Adobe InDesign do zero ao avançado</p>
+                        <p class="certificates-desc">
+                            <a href="https://www.domestika.org/pt/certificates/70367b11527e7d5f01ec77f9bf4ba5e3">Ver certificado </a>
+                        </p>
+                    </div>
+                </div>
             </section>
         </section>
     </main>
